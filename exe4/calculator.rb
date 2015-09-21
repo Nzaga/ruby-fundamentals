@@ -1,0 +1,17 @@
+#assign 5 to the variable i
+i = 5
+
+#assign 10 to the variable j
+j = 10
+
+#assign 4 to the variable x
+x = 4
+
+#assign the total to the variable sum
+sum = i + j + x
+
+#assign the product of j and i to product
+product = j * i
+
+puts "The sum is #{sum}"
+puts "The product #{product}"
