@@ -1,0 +1,128 @@
+= ..ffiillee
+
+(from gem cucumber-core-1.3.0)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  HHaassLLooccaattiioonn
+------------------------------------------------------------------------------
+  file()
+
+------------------------------------------------------------------------------
+
+
+(from gem cucumber-core-1.3.0)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  AAssttBBuuiillddeerr
+------------------------------------------------------------------------------
+  file()
+
+------------------------------------------------------------------------------
+
+
+(from gem cucumber-core-1.3.0)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  CCuuccuummbbeerr::::CCoorree::::GGhheerrkkiinn::::AAssttBBuuiillddeerr::::BBuuiillddeerr
+------------------------------------------------------------------------------
+
+
+(from gem cucumber-2.1.0)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  CCuuccuummbbeerr::::FFiilleeSSppeeccss::::FFiilleeSSppeecc
+------------------------------------------------------------------------------
+
+
+(from gem cucumber-2.1.0)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  CCuuccuummbbeerr::::MMuullttiilliinneeAArrgguummeenntt::::DDaattaaTTaabbllee
+------------------------------------------------------------------------------
+
+
+(from gem cucumber-2.1.0)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RRbbSStteeppDDeeffiinniittiioonn
+------------------------------------------------------------------------------
+  file()
+
+------------------------------------------------------------------------------
+
+
+(from ruby site)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  CCllaassss
+------------------------------------------------------------------------------
+  file(name, *args)
+
+------------------------------------------------------------------------------
+
+Creates a digest object and reads a given file, _n_a_m_e. Optional
+arguments are passed to the constructor of the digest class.
+
+  p Digest::SHA256.file("X11R6.8.2-src.tar.bz2").hexdigest
+  # => "f02e3c85572dc9ad7cb77c2a638e3be24cc1b5bea9fdbb0b0299c9668475c534"
+
+
+(from ruby site)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  IInnssttaannccee
+------------------------------------------------------------------------------
+  file(name)
+
+------------------------------------------------------------------------------
+
+Updates the digest with the contents of a given file _n_a_m_e and returns
+self.
+
+
+(from ruby site)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  PPssyycchh::::SSyynnttaaxxEErrrroorr
+------------------------------------------------------------------------------
+
+
+(from ruby site)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RRDDoocc::::CCooddeeOObbjjeecctt
+------------------------------------------------------------------------------
+
+Which file this code object was defined in
+
+
+(from ruby site)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RRDDoocc::::CCoommmmeenntt
+------------------------------------------------------------------------------
+
+The RDoc::TopLevel this comment was found in
+
+
+(from ruby site)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RRDDoocc::::MMaarrkkuupp::::DDooccuummeenntt
+------------------------------------------------------------------------------
+
+The file this document was created from.  See also
+RDoc::ClassModule#add_comment
+
+
+(from ruby site)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RRDDoocc::::MMaarrkkuupp::::IInncclluuddee
+------------------------------------------------------------------------------
+
+The filename to be included, without extension
+
+
+(from ruby site)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RRDDoocc::::SSttoorree::::MMiissssiinnggFFiilleeEErrrroorr
+------------------------------------------------------------------------------
+
+The file the #name should be saved as
+
+
+(from ruby site)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  DDSSLL
+------------------------------------------------------------------------------
+  file(*args, &block)
+
+------------------------------------------------------------------------------
+
+Declare a file task.
+
+Example:
+   file "config.cfg" => ["config.template"] do
+     open("config.cfg", "w") do |outfile|
+       open("config.template") do |infile|
+         while line = infile.gets
+           outfile.puts line
+         end
+       end
+     end
+  end
+
+
