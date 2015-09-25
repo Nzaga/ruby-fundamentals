@@ -1,0 +1,10 @@
+class Collage 
+
+    def initialize(name, no_of_students)
+        @name = name
+        @no_of_students = no_of_students
+    end
+    
+    attr_reader :name
+    attr_reader :no_of_students
+end

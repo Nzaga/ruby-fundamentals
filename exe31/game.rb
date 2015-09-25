@@ -1,0 +1,60 @@
+puts "***************JUNGLE WORRIOR*****************"
+
+puts "\tWelcome to the jungle worrior game"
+
+puts "Select the options"
+
+puts "1. New game"
+puts "2. Continue a game"
+puts "3. Records"
+puts "4. Settings"
+
+print ">"
+selection = $stdin.gets.chomp
+
+puts selection
+
+if selection == "1"
+    puts "New game to begin"
+    puts "Select level"
+    puts "1. Beginer"
+    puts "2. Intermediate"
+    puts "3. Proffessional"
+    
+    print ">"
+    level = $stdin.gets.chomp
+    
+    if level == "1"
+        puts "*********GAME START**********"
+    elsif level == "2"
+        puts "*********GAME START**********"
+    elsif level == "3"
+        puts "*********GAME START**********"
+    else
+        puts "Return to the main menu"
+    end
+
+elsif selection == "2"
+    puts "Select Game to resume"
+    puts "1. Ngorongoro"
+    puts "2. Manayara"
+    
+    print ">"
+    resume = $stdin.gets.chomp 
+    if resume == "1"
+        puts "*********GAME RESUME**********"
+    elsif resume == "2"
+        puts "*********GAME RESUME**********"
+    else
+        puts "Return to the main menu"
+    end
+    
+
+elsif selection == "3"
+    puts "No records saved"
+elsif selection == "4"
+    puts "Set your player"
+
+else 
+    puts "Thank you for playing Juggle worrior"
+end

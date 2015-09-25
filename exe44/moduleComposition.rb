@@ -1,0 +1,33 @@
+module Other
+    
+    def Other.override()
+        puts "OTHER override"
+    end
+    
+    def implicit()
+        puts "OTHER implicit()"
+    end
+    
+    def Other.altered()
+        puts "OTHER altered"
+    end
+end
+
+class Child 
+    include Other
+    
+    def override()
+        Other.override()
+    end
+    
+    def altered()
+        puts "CHILD,  BEFORE OTHRE altered()"
+        Other.altered()
+        puts "CHILD, AFTER OTHER altered()"
+    end
+
+end
+
+son = Child.new()
+son.override
+son.altered

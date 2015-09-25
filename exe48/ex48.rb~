@@ -1,0 +1,15 @@
+puts "Enter the sentence"
+print "> "
+sentence = $stdin.gets.chomp
+
+# split the sentence into wors
+words = sentence.split(' ')
+
+puts sentence
+print words
+puts " "
+
+
+# Exception handling 
+
+

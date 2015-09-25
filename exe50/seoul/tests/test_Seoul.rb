@@ -1,0 +1,12 @@
+require "./lib/Seoul.rb"
+require "test/unit"
+
+class TestNAME < Test::Unit::TestCase
+ 
+  def test_Seoul()
+    seoul = Seoul.new("Tembo")
+    assert_equal(seoul.animal, "Tembo")
+    
+  end
+
+end

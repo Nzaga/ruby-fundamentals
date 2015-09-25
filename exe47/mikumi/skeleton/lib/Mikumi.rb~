@@ -1,0 +1,7 @@
+class Student 
+
+    def initialize(name, registration_number)
+        @name = name
+        @registration_number = registration_number
+    end
+end
